@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headingContainer">
+        <h1 class="todoHeading">Todo App</h1>
+    </div>
+
+    <div>
+        <form class="taskInputContainer" id="todoForm">
+            <input class="taskInput" type="text" name="taskInput" id="taskInput" placeholder="Enter Your Task">
+            <button class="btn btn-add">Add Task</button>
+        </form>
+        </div>
+        <div class="tableWrapper">
+
+            <table class="tableContainer">
+                <thead>
+            <tr>
+                <th>id</th>
+                <th>Task</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1   
+                </td>
+                <td>
+                    Sample Task
+                    </td>
+                
+                    <td>
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-process">Active</button>
+                        <button class="btn btn-complete">Complete</button>
+                        <button class="btn btn-delete">Delete</button>
+                    </td>
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+        <script src="./script.js" ></script>
+</body>
+</html>

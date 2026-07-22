@@ -1,0 +1,90 @@
+* {
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.headingContainer {
+    text-align: center;
+}
+
+.todoHeading {
+    font-size: clamp(30px, 6vw, 50px);
+    font-weight: bold;
+    display: inline-block;
+    width: 90%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+
+.taskInputContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.taskInput {
+    max-width: 300px;
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 12px 0px 0px 12px;
+    padding: 10px 12px;
+    outline: none;
+}
+.btn {
+    padding: 6px 9px;
+    border:none ;
+    border-radius:12px 12px;
+    cursor: pointer;
+    font-weight: 200;
+    color: white;
+}
+.btn-add {
+    background: rgb(68, 68, 249);
+    border-radius: 0px 12px 12px 0px !important;
+}
+.btn-edit {
+    background-color: yellowgreen;
+}
+.btn-process {
+    background-color: yellow;
+    color: black !important
+    
+}
+.btn-complete {
+    background-color: green;
+}
+.btn-delete {
+    background-color: red;
+}
+.tableWrapper {
+    width: 70%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+.tableContainer {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableContainer th {
+    background: #f2f2f2;
+}
+
+.tableContainer th,
+.tableContainer td {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media  (max-width: 400px) {
+    .tableWrapper {
+        width: 90%;
+    }
+}
